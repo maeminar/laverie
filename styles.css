@@ -122,8 +122,18 @@ body main section.presentation_team {
   align-items: center;
   flex-direction: column;
 }
+body main section.presentation_team ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main section.presentation_team ul li p {
+  text-align: center;
+}
 body main section.presentation_team img {
   width: 5rem;
+  border-radius: 10px;
 }
 
 /* footer */
@@ -150,6 +160,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
+  color: #595959;
 }
 /************************
 * MEDIA QUERIES
