@@ -21,6 +21,10 @@ li {
 h1 {
   text-align: center;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
 /************************
 * CSS PAR SECTION
@@ -48,7 +52,6 @@ header nav label {
 }
 
 header nav ul {
-  list-style-type: none;
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -73,16 +76,15 @@ header nav p {
   padding: 20px;
 }
 
-/* presentation */
+/* presentation_laundry */
 
-body main section.presentation {
-}
-
+/* services */
 body main section.services {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 60px;
 }
 
 button {
@@ -108,7 +110,47 @@ button:hover {
   -webkit-box-shadow: 1px 1px 4px #777777;
   -moz-box-shadow: 1px 1px 4px #777777;
 }
+body main section.services img {
+  width: 5rem;
+}
 
+/* presentation_team */
+
+body main section.presentation_team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main section.presentation_team img {
+  width: 5rem;
+}
+
+/* footer */
+
+footer {
+  padding: 1rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    25deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+footer section.contact img {
+  width: 20px;
+}
+form {
+  margin: 20px auto;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
 /************************
 * MEDIA QUERIES
 ************************/

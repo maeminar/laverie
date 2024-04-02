@@ -31,8 +31,8 @@
       </nav>
     </header>
     <main>
-      <section class="presentation">
-        <h1>Presentation de notre laverie</h1>
+      <section class="presentation_laundry">
+        <h1>Eh...C'est quoi le concept ?!</h1>
         <p>
           La laverie sans nom ! est bien plus qu'une simple laverie automatique.
           Située au cœur de notre quartier, notre laverie offre une expérience
@@ -43,29 +43,36 @@
         </p>
       </section>
       <section class="services">
-        <h1>Nos différents services</h1>
+        <h1>Les services proposés...</h1>
         <ul>
           <li>
+            <img src="imgs/machine.jpg" alt="image d'une machine à laver" />
             Machines à laver de pointe : Nous disposons d'une gamme de machines
             à laver de différentes tailles pour répondre à vos besoins
             spécifiques, que ce soit pour une petite charge de linge délicat ou
             pour une lessive familiale complète.
           </li>
-          <br /><br />
+          <br />
           <li>
+            <img src="imgs/sechelinge.jpg" alt="image d'un sèche linge" />
             Sèche-linge performants : Nos sèche-linge modernes garantissent un
             séchage rapide et efficace de vos vêtements, vous permettant de
             gagner du temps et d'économiser de l'énergie.
           </li>
-          <br /><br />
+          <br />
           <li>
+            <img src="imgs/produit.jpg" alt="image de produits de lessives" />
             Produits de blanchisserie de qualité : Nous proposons une sélection
             de détergents, d'assouplissants et d'autres produits de
             blanchisserie de haute qualité pour obtenir des résultats
             impeccables à chaque lavage.
           </li>
-          <br /><br />
+          <br />
           <li>
+            <img
+              src="imgs/repassage.jpg"
+              alt="image de vêtements repassés et pliés"
+            />
             Services de repassage et de pliage : En plus de nos machines à laver
             et sèche-linge, nous offrons des services de repassage et de pliage
             pour vous aider à obtenir des vêtements parfaitement nettoyés et
@@ -74,10 +81,57 @@
         </ul>
         <button><a href="services.html"></a>En savoir plus</button>
       </section>
-      <section>
+      <section class="presentation_team">
         <h1>Qui sommes nous ?</h1>
+        <ul>
+          <li>
+            Laetitia
+            <img src="imgs/laetitia_profil.jpg" alt="image de Laetitia" />
+            <p>
+              Nam lacinia ultricies diam, at gravida justo fringilla vitae.
+              Integer bibendum tortor ex, a rhoncus ex finibus ac. Curabitur
+              faucibus tempor diam, nec fringilla libero facilisis et. Nunc
+              faucibus odio ex, eget vulputate nibh rhoncus in. Integer vitae
+              gravida ipsum, in ultricies sapien. Vivamus faucibus dui elementum
+              augue accumsan vehicula. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Morbi sodales mi sem, a lobortis dolor semper in.
+            </p>
+          </li>
+          <li>
+            Bertrand
+            <img src="imgs/bertrand_profil.jpg" alt="image de Bertrand" />
+            <p>
+              Nam lacinia ultricies diam, at gravida justo fringilla vitae.
+              Integer bibendum tortor ex, a rhoncus ex finibus ac. Curabitur
+              faucibus tempor diam, nec fringilla libero facilisis et. Nunc
+              faucibus odio ex, eget vulputate nibh rhoncus in. Integer vitae
+              gravida ipsum, in ultricies sapien. Vivamus faucibus dui elementum
+              augue accumsan vehicula. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Morbi sodales mi sem, a lobortis dolor semper in.
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="contact">
+        Nous contacter :
+        <form action="#">
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom" required />
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <input type="submit" value="Envoyer" />
+        </form>
+        <br />Nous suivre :
+        <img src="imgs/facebook.png" alt="facebook" />
+        <img src="imgs/instagram.png" alt="instagram" />
+      </section>
+    </footer>
   </body>
 </html>
