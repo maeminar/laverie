@@ -1,0 +1,137 @@
+/************************
+* CSS GLOBAL
+************************/
+body {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+header {
+  margin: 0;
+}
+main {
+  margin: 15px;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+
+/************************
+* CSS PAR SECTION
+************************/
+/* header */
+header {
+  text-align: center;
+}
+
+header nav {
+  padding: 1rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    25deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+header nav label {
+  display: none;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: aliceblue;
+}
+header nav ul img {
+  width: 50px;
+  float: left;
+}
+
+header nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+header nav a:hover {
+  color: black; /* Couleur du fond au passage de la souris */
+}
+
+header nav p {
+  padding: 20px;
+}
+
+/* presentation */
+
+body main section.presentation {
+}
+
+body main section.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  text-decoration: none;
+  padding: 10px;
+  font-family: arial;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #595959;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border: 4px solid #ffffff;
+  box-shadow: 3px 3px 12px #8db3e2;
+  -webkit-box-shadow: 3px 3px 12px #8db3e2;
+  -moz-box-shadow: 3px 3px 12px #8db3e2;
+}
+
+button:hover {
+  padding: 10px;
+  background-color: #4f81bd;
+  box-shadow: 1px 1px 4px #777777;
+  -webkit-box-shadow: 1px 1px 4px #777777;
+  -moz-box-shadow: 1px 1px 4px #777777;
+}
+
+/************************
+* MEDIA QUERIES
+************************/
+
+/**************************************/
+/* Smartphone taille max 991px*/
+/**************************************/
+@media screen and (min-width: 991px) {
+  header nav {
+    height: 40px;
+  }
+  header nav ul,
+  h1,
+  p {
+    display: none; /*Le menu desktop disparait*/
+  }
+  header nav label {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+  }
+}
