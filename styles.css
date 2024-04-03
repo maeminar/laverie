@@ -153,7 +153,7 @@ footer {
 footer section.contact img {
   width: 20px;
 }
-form {
+footer section.contact form {
   margin: 20px auto;
   width: 300px;
   padding: 20px;
@@ -161,6 +161,11 @@ form {
   border-radius: 5px;
   background-color: #f9f9f9;
   color: #595959;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 /************************
 * MEDIA QUERIES
