@@ -1,6 +1,3 @@
-/************************
-* CSS GLOBAL
-************************/
 body {
   font-family: "Concert One", sans-serif;
   font-weight: 400;
@@ -27,8 +24,8 @@ ul {
 }
 
 /************************
-* CSS PAR SECTION
-************************/
+  * CSS PAR SECTION
+  ************************/
 /* header */
 header {
   text-align: center;
@@ -76,64 +73,25 @@ header nav p {
   padding: 20px;
 }
 
-/* presentation_laundry */
+/* formulaire */
 
-/* services */
-body main section.services {
+body main section.contact form {
+  margin: 20px auto;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #595959;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 60px;
-}
-
-button {
-  text-decoration: none;
-  padding: 10px;
-  font-family: arial;
-  font-size: 1em;
-  color: #ffffff;
-  background-color: #595959;
-  border-radius: 24px;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  border: 4px solid #ffffff;
-  box-shadow: 3px 3px 12px #8db3e2;
-  -webkit-box-shadow: 3px 3px 12px #8db3e2;
-  -moz-box-shadow: 3px 3px 12px #8db3e2;
-}
-
-button:hover {
-  padding: 10px;
-  background-color: #4f81bd;
-  box-shadow: 1px 1px 4px #777777;
-  -webkit-box-shadow: 1px 1px 4px #777777;
-  -moz-box-shadow: 1px 1px 4px #777777;
-}
-body main section.services img {
-  width: 5rem;
-}
-
-/* presentation_team */
-
-body main section.presentation_team {
-  display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
-body main section.presentation_team ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-body main section.presentation_team ul li p {
-  text-align: center;
-}
-body main section.presentation_team img {
-  width: 5rem;
-  border-radius: 10px;
+
+body main section.contact form .message {
+  margin: 20px;
 }
 
 /* footer */
@@ -159,21 +117,13 @@ footer section.contact form {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #e3ebe2;
+  background-color: #f9f9f9;
   color: #595959;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-}
-footer section.contact form .message {
-  margin: 20px;
-}
-footer section.contact {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 /************************
 * MEDIA QUERIES
